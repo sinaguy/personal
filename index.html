@@ -1,863 +1,723 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <title>Hello World</title>
-
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
+    <meta charset="UTF-8">
+    <meta name="description" content="">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- The above 4 meta tags *must* come first in the head; any other head content must come *after* these tags -->
 
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- Title -->
+    <title>Original - Lifestyle Blog Template</title>
 
-    <!-- FontAwesome CSS -->
-    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <!-- Favicon -->
+    <link rel="icon" href="img/core-img/favicon.ico">
 
-    <!-- ElegantFonts CSS -->
-    <link rel="stylesheet" href="css/elegant-fonts.css">
-
-    <!-- themify-icons CSS -->
-    <link rel="stylesheet" href="css/themify-icons.css">
-
-    <!-- Swiper CSS -->
-    <link rel="stylesheet" href="css/swiper.min.css">
-
-    <!-- Styles -->
+    <!-- Style CSS -->
     <link rel="stylesheet" href="style.css">
+
 </head>
+
 <body>
-    <header class="site-header">
-        <div class="top-header-bar">
-            <div class="container">
-                <div class="row flex-wrap justify-content-center justify-content-lg-between align-items-lg-center">
-                    <div class="col-12 col-lg-8 d-none d-md-flex flex-wrap justify-content-center justify-content-lg-start mb-3 mb-lg-0">
-                        <div class="header-bar-email">
-                            MAIL: <a href="#">contact@ourcharity.com</a>
-                        </div><!-- .header-bar-email -->
+    <!-- Preloader -->
+    <div id="preloader">
+        <div class="preload-content">
+            <div id="original-load"></div>
+        </div>
+    </div>
 
-                        <div class="header-bar-text">
-                            <p>PHONE: <span>+24 3772 120 091 / +56452 4567</span></p>
-                        </div><!-- .header-bar-text -->
-                    </div><!-- .col -->
+    <!-- Subscribe Modal -->
+    <div class="subscribe-newsletter-area">
+        <div class="modal fade" id="subsModal" tabindex="-1" role="dialog" aria-labelledby="subsModal" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <div class="modal-body">
+                        <h5 class="title">Subscribe to my newsletter</h5>
+                        <form action="#" class="newsletterForm" method="post">
+                            <input type="email" name="email" id="subscribesForm2" placeholder="Your e-mail here">
+                            <button type="submit" class="btn original-btn">Subscribe</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
-                    <div class="col-12 col-lg-4 d-flex flex-wrap justify-content-center justify-content-lg-end align-items-center">
-                        <div class="donate-btn">
-                            <a href="#">Donate Now</a>
-                        </div><!-- .donate-btn -->
-                    </div><!-- .col -->
-                </div><!-- .row -->
-            </div><!-- .container -->
-        </div><!-- .top-header-bar -->
+    <!-- ##### Header Area Start ##### -->
+    <header class="header-area">
 
-        <div class="nav-bar">
-            <div class="container">
-                <div class="row">
-                    <div class="col-12 d-flex flex-wrap justify-content-between align-items-center">
-                        <div class="site-branding d-flex align-items-center">
-                           <a class="d-block" href="index.html" rel="home"><img class="d-block" src="images/logo.png" alt="logo"></a>
-                        </div><!-- .site-branding -->
-
-                        <nav class="site-navigation d-flex justify-content-end align-items-center">
-                            <ul class="d-flex flex-column flex-lg-row justify-content-lg-end align-content-center">
-                                <li class="current-menu-item"><a href="index.html">Home</a></li>
-                                <li><a href="about.html">About us</a></li>
-                                <li><a href="causes.html">Causes</a></li>
-                                <li><a href="portfolio.html">Gallery</a></li>
-                                <li><a href="news.html">News</a></li>
-                                <li><a href="contact.html">Contact</a></li>
-                            </ul>
-                        </nav><!-- .site-navigation -->
-
-                        <div class="hamburger-menu d-lg-none">
-                            <span></span>
-                            <span></span>
-                            <span></span>
-                            <span></span>
-                        </div><!-- .hamburger-menu -->
-                    </div><!-- .col -->
-                </div><!-- .row -->
-            </div><!-- .container -->
-        </div><!-- .nav-bar -->
-    </header><!-- .site-header -->
-
-    <div class="swiper-container hero-slider">
-        <div class="swiper-wrapper">
-            <div class="swiper-slide hero-content-wrap">
-                <img src="images/hero.jpg" alt="">
-
-                <div class="hero-content-overlay position-absolute w-100 h-100">
-                    <div class="container h-100">
-                        <div class="row h-100">
-                            <div class="col-12 col-lg-8 d-flex flex-column justify-content-center align-items-start">
-                                <header class="entry-header">
-                                    <h1>Donate</h1>
-                                    <h4>4 a better world</h4>
-                                </header><!-- .entry-header -->
-
-                                <div class="entry-content mt-4">
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris tempus vestibulum mauris quis aliquam. Integer accumsan sodales odio, id tempus ullamcorper</p>
-                                </div><!-- .entry-content -->
-
-                                <footer class="entry-footer d-flex flex-wrap align-items-center mt-5">
-                                    <a href="#" class="btn gradient-bg mr-2">Donate Now</a>
-                                    <a href="#" class="btn orange-border">Read More</a>
-                                </footer><!-- .entry-footer -->
-                            </div><!-- .col -->
-                        </div><!-- .row -->
-                    </div><!-- .container -->
-                </div><!-- .hero-content-overlay -->
-            </div><!-- .hero-content-wrap -->
-
-            <div class="swiper-slide hero-content-wrap">
-                <img src="images/hero.jpg" alt="">
-
-                <div class="hero-content-overlay position-absolute w-100 h-100">
-                    <div class="container h-100">
-                        <div class="row h-100">
-                            <div class="col-12 col-lg-8 d-flex flex-column justify-content-center align-items-start">
-                                <header class="entry-header">
-                                    <h1>Donate</h1>
-                                    <h4>4 a better world</h4>
-                                </header><!-- .entry-header -->
-
-                                <div class="entry-content mt-4">
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris tempus vestibulum mauris quis aliquam. Integer accumsan sodales odio, id tempus ullamcorper</p>
-                                </div><!-- .entry-content -->
-
-                                <footer class="entry-footer d-flex flex-wrap align-items-center mt-5">
-                                    <a href="#" class="btn gradient-bg mr-2">Donate Now</a>
-                                    <a href="#" class="btn orange-border">Read More</a>
-                                </footer><!-- .entry-footer -->
-                            </div><!-- .col -->
-                        </div><!-- .row -->
-                    </div><!-- .container -->
-                </div><!-- .hero-content-overlay -->
-            </div><!-- .hero-content-wrap -->
-
-            <div class="swiper-slide hero-content-wrap">
-                <img src="images/hero.jpg" alt="">
-
-                <div class="hero-content-overlay position-absolute w-100 h-100">
-                    <div class="container h-100">
-                        <div class="row h-100">
-                            <div class="col-12 col-lg-8 d-flex flex-column justify-content-center align-items-start">
-                                <header class="entry-header">
-                                    <h1>Donate</h1>
-                                    <h4>4 a better world</h4>
-                                </header><!-- .entry-header -->
-
-                                <div class="entry-content mt-4">
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris tempus vestibulum mauris quis aliquam. Integer accumsan sodales odio, id tempus ullamcorper</p>
-                                </div><!-- .entry-content -->
-
-                                <footer class="entry-footer d-flex flex-wrap align-items-center mt-5">
-                                    <a href="#" class="btn gradient-bg mr-2">Donate Now</a>
-                                    <a href="#" class="btn orange-border">Read More</a>
-                                </footer><!-- .entry-footer -->
-                            </div><!-- .col -->
-                        </div><!-- .row -->
-                    </div><!-- .container -->
-                </div><!-- .hero-content-overlay -->
-            </div><!-- .hero-content-wrap -->
-        </div><!-- .swiper-wrapper -->
-
-        <div class="pagination-wrap position-absolute w-100">
-            <div class="container">
-                <div class="swiper-pagination"></div>
-            </div><!-- .container -->
-        </div><!-- .pagination-wrap -->
-
-        <!-- Add Arrows -->
-        <div class="swiper-button-next flex justify-content-center align-items-center">
-            <span><svg viewBox="0 0 1792 1792" xmlns="http://www.w3.org/2000/svg"><path d="M1171 960q0 13-10 23l-466 466q-10 10-23 10t-23-10l-50-50q-10-10-10-23t10-23l393-393-393-393q-10-10-10-23t10-23l50-50q10-10 23-10t23 10l466 466q10 10 10 23z"/></svg></span>
+        <!-- Top Header Area -->
+        <div class="top-header">
+            <div class="container h-100">
+                <div class="row h-100 align-items-center">
+                    <!-- Breaking News Area -->
+                    <div class="col-12 col-sm-8">
+                        <div class="breaking-news-area">
+                            <div id="breakingNewsTicker" class="ticker">
+                                <ul>
+                                    <li><a href="#">Hello World!</a></li>
+                                    <li><a href="#">Hello Universe!</a></li>
+                                    <li><a href="#">Hello Original!</a></li>
+                                    <li><a href="#">Hello Earth!</a></li>
+                                    <li><a href="#">Hello Colorlib!</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Top Social Area -->
+                    <div class="col-12 col-sm-4">
+                        <div class="top-social-area">
+                            <a href="#" data-toggle="tooltip" data-placement="bottom" title="Pinterest"><i class="fa fa-pinterest" aria-hidden="true"></i></a>
+                            <a href="#" data-toggle="tooltip" data-placement="bottom" title="Facebook"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                            <a href="#" data-toggle="tooltip" data-placement="bottom" title="Twitter"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                            <a href="#" data-toggle="tooltip" data-placement="bottom" title="Dribbble"><i class="fa fa-dribbble" aria-hidden="true"></i></a>
+                            <a href="#" data-toggle="tooltip" data-placement="bottom" title="Behance"><i class="fa fa-behance" aria-hidden="true"></i></a>
+                            <a href="#" data-toggle="tooltip" data-placement="bottom" title="Linkedin"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
 
-        <div class="swiper-button-prev flex justify-content-center align-items-center">
-            <span><svg viewBox="0 0 1792 1792" xmlns="http://www.w3.org/2000/svg"><path d="M1203 544q0 13-10 23l-393 393 393 393q10 10 10 23t-10 23l-50 50q-10 10-23 10t-23-10l-466-466q-10-10-10-23t10-23l466-466q10-10 23-10t23 10l50 50q10 10 10 23z"/></svg></span>
+        <!-- Logo Area -->
+        <div class="logo-area text-center">
+            <div class="container h-100">
+                <div class="row h-100 align-items-center">
+                    <div class="col-12">
+                        <a href="index.html" class="original-logo"><img src="img/core-img/logo.png" alt=""></a>
+                    </div>
+                </div>
+            </div>
         </div>
-    </div><!-- .hero-slider -->
 
-    <div class="home-page-icon-boxes">
-        <div class="container">
-            <div class="row">
-                <div class="col-12 col-md-6 col-lg-4 mt-4 mt-lg-0">
-                    <div class="icon-box active">
-                        <figure class="d-flex justify-content-center">
-                            <img src="images/hands-gray.png" alt="">
-                            <img src="images/hands-white.png" alt="">
-                        </figure>
+        <!-- Nav Area -->
+        <div class="original-nav-area" id="stickyNav">
+            <div class="classy-nav-container breakpoint-off">
+                <div class="container">
+                    <!-- Classy Menu -->
+                    <nav class="classy-navbar justify-content-between">
 
-                        <header class="entry-header">
-                            <h3 class="entry-title">Become a Volunteer</h3>
-                        </header>
+                        <!-- Subscribe btn -->
+                        <div class="subscribe-btn">
+                            <a href="#" class="btn subscribe-btn" data-toggle="modal" data-target="#subsModal">Subscribe</a>
+                        </div>
 
-                        <div class="entry-content">
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris tempus vestib ulum mauris quis aliquam. </p>
+                        <!-- Navbar Toggler -->
+                        <div class="classy-navbar-toggler">
+                            <span class="navbarToggler"><span></span><span></span><span></span></span>
+                        </div>
+
+                        <!-- Menu -->
+                        <div class="classy-menu" id="originalNav">
+                            <!-- close btn -->
+                            <div class="classycloseIcon">
+                                <div class="cross-wrap"><span class="top"></span><span class="bottom"></span></div>
+                            </div>
+
+                            <!-- Nav Start -->
+                            <div class="classynav">
+                                <ul>
+                                    <li><a href="index.html">Home</a></li>
+                                    <li><a href="#">Pages</a>
+                                        <ul class="dropdown">
+                                            <li><a href="index.html">Home</a></li>
+                                            <li><a href="about-us.html">About Us</a></li>
+                                            <li><a href="single-post.html">Single Post</a></li>
+                                            <li><a href="contact.html">Contact</a></li>
+                                            <li><a href="coming-soon.html">Coming Soon</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="#">Catagory</a>
+                                        <ul class="dropdown">
+                                            <li><a href="#">Catagory 1</a></li>
+                                            <li><a href="#">Catagory 1</a></li>
+                                            <li><a href="#">Catagory 1</a>
+                                                <ul class="dropdown">
+                                                    <li><a href="#">Catagory 2</a></li>
+                                                    <li><a href="#">Catagory 2</a></li>
+                                                    <li><a href="#">Catagory 2</a>
+                                                        <ul class="dropdown">
+                                                            <li><a href="#">Catagory 3</a></li>
+                                                            <li><a href="#">Catagory 3</a></li>
+                                                            <li><a href="#">Catagory 3</a></li>
+                                                            <li><a href="#">Catagory 3</a></li>
+                                                            <li><a href="#">Catagory 3</a></li>
+                                                        </ul>
+                                                    </li>
+                                                    <li><a href="#">Catagory 2</a></li>
+                                                    <li><a href="#">Catagory 2</a></li>
+                                                </ul>
+                                            </li>
+                                            <li><a href="#">Catagory 1</a></li>
+                                            <li><a href="#">Catagory 1</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="about-us.html">About Us</a></li>
+                                    <li><a href="#">Megamenu</a>
+                                        <div class="megamenu">
+                                            <ul class="single-mega cn-col-4">
+                                                <li class="title">Headline 1</li>
+                                                <li><a href="#">Mega Menu Item 1</a></li>
+                                                <li><a href="#">Mega Menu Item 2</a></li>
+                                                <li><a href="#">Mega Menu Item 3</a></li>
+                                                <li><a href="#">Mega Menu Item 4</a></li>
+                                                <li><a href="#">Mega Menu Item 5</a></li>
+                                            </ul>
+                                            <ul class="single-mega cn-col-4">
+                                                <li class="title">Headline 2</li>
+                                                <li><a href="#">Mega Menu Item 1</a></li>
+                                                <li><a href="#">Mega Menu Item 2</a></li>
+                                                <li><a href="#">Mega Menu Item 3</a></li>
+                                                <li><a href="#">Mega Menu Item 4</a></li>
+                                                <li><a href="#">Mega Menu Item 5</a></li>
+                                            </ul>
+                                            <ul class="single-mega cn-col-4">
+                                                <li class="title">Headline 3</li>
+                                                <li><a href="#">Mega Menu Item 1</a></li>
+                                                <li><a href="#">Mega Menu Item 2</a></li>
+                                                <li><a href="#">Mega Menu Item 3</a></li>
+                                                <li><a href="#">Mega Menu Item 4</a></li>
+                                                <li><a href="#">Mega Menu Item 5</a></li>
+                                            </ul>
+                                            <ul class="single-mega cn-col-4">
+                                                <li class="title">Headline 4</li>
+                                                <li><a href="#">Mega Menu Item 1</a></li>
+                                                <li><a href="#">Mega Menu Item 2</a></li>
+                                                <li><a href="#">Mega Menu Item 3</a></li>
+                                                <li><a href="#">Mega Menu Item 4</a></li>
+                                                <li><a href="#">Mega Menu Item 5</a></li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                    <li><a href="contact.html">Contact</a></li>
+                                </ul>
+
+                                <!-- Search Form  -->
+                                <div id="search-wrapper">
+                                    <form action="#">
+                                        <input type="text" id="search" placeholder="Search something...">
+                                        <div id="close-icon"></div>
+                                        <input class="d-none" type="submit" value="">
+                                    </form>
+                                </div>
+                            </div>
+                            <!-- Nav End -->
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- ##### Header Area End ##### -->
+
+    <!-- ##### Hero Area Start ##### -->
+    <div class="hero-area">
+        <!-- Hero Slides Area -->
+        <div class="hero-slides owl-carousel">
+            <!-- Single Slide -->
+            <div class="single-hero-slide bg-img" style="background-image: url(img/bg-img/b2.jpg);">
+                <div class="container h-100">
+                    <div class="row h-100 align-items-center">
+                        <div class="col-12">
+                            <div class="slide-content text-center">
+                                <div class="post-tag">
+                                    <a href="#" data-animation="fadeInUp">lifestyle</a>
+                                </div>
+                                <h2 data-animation="fadeInUp" data-delay="250ms"><a href="single-post.html">Take a look at last night’s party!</a></h2>
+                            </div>
                         </div>
                     </div>
                 </div>
-
-                <div class="col-12 col-md-6 col-lg-4 mt-4 mt-lg-0">
-                    <div class="icon-box">
-                        <figure class="d-flex justify-content-center">
-                            <img src="images/donation-gray.png" alt="">
-                            <img src="images/donation-white.png" alt="">
-                        </figure>
-
-                        <header class="entry-header">
-                            <h3 class="entry-title">Dance & Music</h3>
-                        </header>
-
-                        <div class="entry-content">
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris tempus vestib ulum mauris quis aliquam. </p>
+            </div>
+            <!-- Single Slide -->
+            <div class="single-hero-slide bg-img" style="background-image: url(img/bg-img/b1.jpg);">
+                <div class="container h-100">
+                    <div class="row h-100 align-items-center">
+                        <div class="col-12">
+                            <div class="slide-content text-center">
+                                <div class="post-tag">
+                                    <a href="#" data-animation="fadeInUp">lifestyle</a>
+                                </div>
+                                <h2 data-animation="fadeInUp" data-delay="250ms"><a href="single-post.html">Take a look at last night’s party!</a></h2>
+                            </div>
                         </div>
                     </div>
                 </div>
-
-                <div class="col-12 col-md-6 col-lg-4 mt-4 mt-lg-0">
-                    <div class="icon-box">
-                        <figure class="d-flex justify-content-center">
-                            <img src="images/charity-gray.png" alt="">
-                            <img src="images/charity-white.png" alt="">
-                        </figure>
-
-                        <header class="entry-header">
-                            <h3 class="entry-title">Online Conference</h3>
-                        </header>
-
-                        <div class="entry-content">
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris tempus vestib ulum mauris quis aliquam. </p>
+            </div>
+            <!-- Single Slide -->
+            <div class="single-hero-slide bg-img" style="background-image: url(img/bg-img/b3.jpg);">
+                <div class="container h-100">
+                    <div class="row h-100 align-items-center">
+                        <div class="col-12">
+                            <div class="slide-content text-center">
+                                <div class="post-tag">
+                                    <a href="#" data-animation="fadeInUp">lifestyle</a>
+                                </div>
+                                <h2 data-animation="fadeInUp" data-delay="250ms"><a href="single-post.html">Take a look at last night’s party!</a></h2>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div><!-- .row -->
-        </div><!-- .container -->
-    </div><!-- .home-page-icon-boxes -->
-
-    <div class="home-page-welcome">
-        <div class="container">
-            <div class="row">
-                <div class="col-12 col-lg-6 order-2 order-lg-1">
-                    <div class="welcome-content">
-                        <header class="entry-header">
-                            <h2 class="entry-title">Wellcome to our Charity</h2>
-                        </header><!-- .entry-header -->
-
-                        <div class="entry-content mt-5">
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris tempus vestib ulum mauris quis aliquam. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris tempus vestibulum mauris quis aliquam. Integer accumsan sodales odio, id tempus velit ullamcorper id. Quisque at erat eu libero consequat tempus. Quisque molestie convallis tempus. Ut semper purus metus, a euismod sapien sodales ac. Duis viverra eleifend fermentum.</p>
-                        </div><!-- .entry-content -->
-
-                        <div class="entry-footer mt-5">
-                            <a href="#" class="btn gradient-bg mr-2">Read More</a>
-                        </div><!-- .entry-footer -->
-                    </div><!-- .welcome-content -->
-                </div><!-- .col -->
-
-                <div class="col-12 col-lg-6 mt-4 order-1 order-lg-2">
-                    <img src="images/welcome.jpg" alt="welcome">
-                </div><!-- .col -->
-            </div><!-- .row -->
-        </div><!-- .container -->
-    </div><!-- .home-page-icon-boxes -->
-
-    <div class="home-page-events">
-        <div class="container">
-            <div class="row">
-                <div class="col-12 col-lg-6">
-                    <div class="upcoming-events">
-                        <div class="section-heading">
-                            <h2 class="entry-title">Upcoming Events</h2>
-                        </div><!-- .section-heading -->
-
-                        <div class="event-wrap d-flex flex-wrap justify-content-between">
-                            <figure class="m-0">
-                                <img src="images/event-1.jpg" alt="">
-                            </figure>
-
-                            <div class="event-content-wrap">
-                                <header class="entry-header d-flex flex-wrap align-items-center">
-                                    <h3 class="entry-title w-100 m-0"><a href="#">Fundraiser for Kids</a></h3>
-
-                                    <div class="posted-date">
-                                        <a href="#">Aug 25, 2018 </a>
-                                    </div><!-- .posted-date -->
-
-                                    <div class="cats-links">
-                                        <a href="#">Ball Room New York</a>
-                                    </div><!-- .cats-links -->
-                                </header><!-- .entry-header -->
-
-                                <div class="entry-content">
-                                    <p class="m-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris tempus vestib ulum mauris.</p>
-                                </div><!-- .entry-content -->
-
-                                <div class="entry-footer">
-                                    <a href="#">Read More</a>
-                                </div><!-- .entry-footer -->
-                            </div><!-- .event-content-wrap -->
-                        </div><!-- .event-wrap -->
-
-                        <div class="event-wrap d-flex flex-wrap justify-content-between">
-                            <figure class="m-0">
-                                <img src="images/event-2.jpg" alt="">
-                            </figure>
-
-                            <div class="event-content-wrap">
-                                <header class="entry-header d-flex flex-wrap align-items-center">
-                                    <h3 class="entry-title w-100 m-0"><a href="#">Bring water to the childrens</a></h3>
-
-                                    <div class="posted-date">
-                                        <a href="#">Aug 25, 2018 </a>
-                                    </div><!-- .posted-date -->
-
-                                    <div class="cats-links">
-                                        <a href="#">Ball Room New York</a>
-                                    </div><!-- .cats-links -->
-                                </header><!-- .entry-header -->
-
-                                <div class="entry-content">
-                                    <p class="m-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris tempus vestib ulum mauris.</p>
-                                </div><!-- .entry-content -->
-
-                                <div class="entry-footer">
-                                    <a href="#">Read More</a>
-                                </div><!-- .entry-footer -->
-                            </div><!-- .event-content-wrap -->
-                        </div><!-- .event-wrap -->
-
-                        <div class="event-wrap d-flex flex-wrap justify-content-between">
-                            <figure class="m-0">
-                                <img src="images/event-3.jpg" alt="">
-                            </figure>
-
-                            <div class="event-content-wrap">
-                                <header class="entry-header d-flex flex-wrap align-items-center">
-                                    <h3 class="entry-title w-100 m-0"><a href="#">Bring water to the childrens</a></h3>
-
-                                    <div class="posted-date">
-                                        <a href="#">Aug 25, 2018 </a>
-                                    </div><!-- .posted-date -->
-
-                                    <div class="cats-links">
-                                        <a href="#">Ball Room New York</a>
-                                    </div><!-- .cats-links -->
-                                </header><!-- .entry-header -->
-
-                                <div class="entry-content">
-                                    <p class="m-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris tempus vestib ulum mauris.</p>
-                                </div><!-- .entry-content -->
-
-                                <div class="entry-footer">
-                                    <a href="#">Read More</a>
-                                </div><!-- .entry-footer -->
-                            </div><!-- .event-content-wrap -->
-                        </div><!-- .event-wrap -->
-                    </div><!-- .upcoming-events -->
-                </div><!-- .col -->
-
-                <div class="col-12 col-lg-6">
-                    <div class="featured-cause">
-                        <div class="section-heading">
-                            <h2 class="entry-title">Featured Cause</h2>
-                        </div><!-- .section-heading -->
-
-                        <div class="cause-wrap d-flex flex-wrap justify-content-between">
-                            <figure class="m-0">
-                                <img src="images/featured-causes.jpg" alt="">
-                            </figure>
-
-                            <div class="cause-content-wrap">
-                                <header class="entry-header d-flex flex-wrap align-items-center">
-                                    <h3 class="entry-title w-100 m-0"><a href="#">Fundraiser for Kids</a></h3>
-
-                                    <div class="posted-date">
-                                        <a href="#">Aug 25, 2018 </a>
-                                    </div><!-- .posted-date -->
-
-                                    <div class="cats-links">
-                                        <a href="#">Ball Room New York</a>
-                                    </div><!-- .cats-links -->
-                                </header><!-- .entry-header -->
-
-                                <div class="entry-content">
-                                    <p class="m-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris tempus vestib ulum mauris. Lorem ipsum dolor sit amet, consectetur.</p>
-                                </div><!-- .entry-content -->
-
-                                <div class="entry-footer mt-5">
-                                    <a href="#" class="btn gradient-bg mr-2">Donate Now</a>
-                                </div><!-- .entry-footer -->
-                            </div><!-- .cause-content-wrap -->
-
-                            <div class="fund-raised w-100">
-                                <div class="featured-fund-raised-bar barfiller">
-                                    <div class="tipWrap">
-                                        <span class="tip"></span>
-                                    </div><!-- .tipWrap -->
-
-                                    <span class="fill" data-percentage="83"></span>
-                                </div><!-- .fund-raised-bar -->
-
-                                <div class="fund-raised-details d-flex flex-wrap justify-content-between align-items-center">
-                                    <div class="fund-raised-total mt-4">
-                                        Raised: $56 880
-                                    </div><!-- .fund-raised-total -->
-
-                                    <div class="fund-raised-goal mt-4">
-                                        Goal: $70 000
-                                    </div><!-- .fund-raised-goal -->
-                                </div><!-- .fund-raised-details -->
-                            </div><!-- .fund-raised -->
-                        </div><!-- .cause-wrap -->
-                    </div><!-- .featured-cause -->
-                </div><!-- .col -->
-            </div><!-- .row -->
-        </div><!-- .container -->
-    </div><!-- .home-page-events -->
-
-    <div class="our-causes">
-        <div class="container">
-            <div class="row">
-                <div class="coL-12">
-                    <div class="section-heading">
-                        <h2 class="entry-title">Our Causes</h2>
-                    </div><!-- .section-heading -->
-                </div><!-- .col -->
-            </div><!-- .row -->
-
-            <div class="row">
-                <div class="col-12">
-                    <div class="swiper-container causes-slider">
-                        <div class="swiper-wrapper">
-                            <div class="swiper-slide">
-                                <div class="cause-wrap">
-                                    <figure class="m-0">
-                                        <img src="images/cause-1.jpg" alt="">
-
-                                        <div class="figure-overlay d-flex justify-content-center align-items-center position-absolute w-100 h-100">
-                                            <a href="#" class="btn gradient-bg mr-2">Donate Now</a>
-                                        </div><!-- .figure-overlay -->
-                                    </figure>
-
-                                    <div class="cause-content-wrap">
-                                        <header class="entry-header d-flex flex-wrap align-items-center">
-                                            <h3 class="entry-title w-100 m-0"><a href="#">Bring water to the childrens</a></h3>
-                                        </header><!-- .entry-header -->
-
-                                        <div class="entry-content">
-                                            <p class="m-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris tempus vestib ulum mauris.</p>
-                                        </div><!-- .entry-content -->
-
-                                        <div class="fund-raised w-100">
-                                            <div class="fund-raised-bar-1 barfiller">
-                                                <div class="tipWrap">
-                                                    <span class="tip"></span>
-                                                </div><!-- .tipWrap -->
-
-                                                <span class="fill" data-percentage="83"></span>
-                                            </div><!-- .fund-raised-bar -->
-
-                                            <div class="fund-raised-details d-flex flex-wrap justify-content-between align-items-center">
-                                                <div class="fund-raised-total mt-4">
-                                                    Raised: $56 880
-                                                </div><!-- .fund-raised-total -->
-
-                                                <div class="fund-raised-goal mt-4">
-                                                    Goal: $70 000
-                                                </div><!-- .fund-raised-goal -->
-                                            </div><!-- .fund-raised-details -->
-                                        </div><!-- .fund-raised -->
-                                    </div><!-- .cause-content-wrap -->
-                                </div><!-- .cause-wrap -->
-                            </div><!-- .swiper-slide -->
-
-                            <div class="swiper-slide">
-                                <div class="cause-wrap">
-                                    <figure class="m-0">
-                                        <img src="images/cause-2.jpg" alt="">
-
-                                        <div class="figure-overlay d-flex justify-content-center align-items-center position-absolute w-100 h-100">
-                                            <a href="#" class="btn gradient-bg mr-2">Donate Now</a>
-                                        </div><!-- .figure-overlay -->
-                                    </figure>
-
-                                    <div class="cause-content-wrap">
-                                        <header class="entry-header d-flex flex-wrap align-items-center">
-                                            <h3 class="entry-title w-100 m-0"><a href="#">Education for all</a></h3>
-                                        </header><!-- .entry-header -->
-
-                                        <div class="entry-content">
-                                            <p class="m-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris tempus vestib ulum mauris.</p>
-                                        </div><!-- .entry-content -->
-
-                                        <div class="fund-raised w-100">
-                                            <div class="fund-raised-bar-2 barfiller">
-                                                <div class="tipWrap">
-                                                    <span class="tip"></span>
-                                                </div><!-- .tipWrap -->
-
-                                                <span class="fill" data-percentage="70"></span>
-                                            </div><!-- .fund-raised-bar -->
-
-                                            <div class="fund-raised-details d-flex flex-wrap justify-content-between align-items-center">
-                                                <div class="fund-raised-total mt-4">
-                                                    Raised: $56 880
-                                                </div><!-- .fund-raised-total -->
-
-                                                <div class="fund-raised-goal mt-4">
-                                                    Goal: $70 000
-                                                </div><!-- .fund-raised-goal -->
-                                            </div><!-- .fund-raised-details -->
-                                        </div><!-- .fund-raised -->
-                                    </div><!-- .cause-content-wrap -->
-                                </div><!-- .cause-wrap -->
-                            </div><!-- .swiper-slide -->
-
-                            <div class="swiper-slide">
-                                <div class="cause-wrap">
-                                    <figure class="m-0">
-                                        <img src="images/cause-3.jpg" alt="">
-
-                                        <div class="figure-overlay d-flex justify-content-center align-items-center position-absolute w-100 h-100">
-                                            <a href="#" class="btn gradient-bg mr-2">Donate Now</a>
-                                        </div><!-- .figure-overlay -->
-                                    </figure>
-
-                                    <div class="cause-content-wrap">
-                                        <header class="entry-header d-flex flex-wrap align-items-center">
-                                            <h3 class="entry-title w-100 m-0"><a href="#">Bring water to the childrens</a></h3>
-                                        </header><!-- .entry-header -->
-
-                                        <div class="entry-content">
-                                            <p class="m-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris tempus vestib ulum mauris.</p>
-                                        </div><!-- .entry-content -->
-
-                                        <div class="fund-raised w-100">
-                                            <div class="fund-raised-bar-3 barfiller">
-                                                <div class="tipWrap">
-                                                    <span class="tip"></span>
-                                                </div><!-- .tipWrap -->
-
-                                                <span class="fill" data-percentage="83"></span>
-                                            </div><!-- .fund-raised-bar -->
-
-                                            <div class="fund-raised-details d-flex flex-wrap justify-content-between align-items-center">
-                                                <div class="fund-raised-total mt-4">
-                                                    Raised: $56 880
-                                                </div><!-- .fund-raised-total -->
-
-                                                <div class="fund-raised-goal mt-4">
-                                                    Goal: $70 000
-                                                </div><!-- .fund-raised-goal -->
-                                            </div><!-- .fund-raised-details -->
-                                        </div><!-- .fund-raised -->
-                                    </div><!-- .cause-content-wrap -->
-                                </div><!-- .cause-wrap -->
-                            </div><!-- .swiper-slide -->
-
-                            <div class="swiper-slide">
-                                <div class="cause-wrap">
-                                    <figure class="m-0">
-                                        <img src="images/cause-1.jpg" alt="">
-
-                                        <div class="figure-overlay d-flex justify-content-center align-items-center position-absolute w-100 h-100">
-                                            <a href="#" class="btn gradient-bg mr-2">Donate Now</a>
-                                        </div><!-- .figure-overlay -->
-                                    </figure>
-
-                                    <div class="cause-content-wrap">
-                                        <header class="entry-header d-flex flex-wrap align-items-center">
-                                            <h3 class="entry-title w-100 m-0"><a href="#">Bring water to the childrens</a></h3>
-                                        </header><!-- .entry-header -->
-
-                                        <div class="entry-content">
-                                            <p class="m-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris tempus vestib ulum mauris.</p>
-                                        </div><!-- .entry-content -->
-
-                                        <div class="fund-raised w-100">
-                                            <div class="fund-raised-bar-4 barfiller">
-                                                <div class="tipWrap">
-                                                    <span class="tip"></span>
-                                                </div><!-- .tipWrap -->
-
-                                                <span class="fill" data-percentage="83"></span>
-                                            </div><!-- .fund-raised-bar -->
-
-                                            <div class="fund-raised-details d-flex flex-wrap justify-content-between align-items-center">
-                                                <div class="fund-raised-total mt-4">
-                                                    Raised: $56 880
-                                                </div><!-- .fund-raised-total -->
-
-                                                <div class="fund-raised-goal mt-4">
-                                                    Goal: $70 000
-                                                </div><!-- .fund-raised-goal -->
-                                            </div><!-- .fund-raised-details -->
-                                        </div><!-- .fund-raised -->
-                                    </div><!-- .cause-content-wrap -->
-                                </div><!-- .cause-wrap -->
-                            </div><!-- .swiper-slide -->
-
-                            <div class="swiper-slide">
-                                <div class="cause-wrap">
-                                    <figure class="m-0">
-                                        <img src="images/cause-2.jpg" alt="">
-
-                                        <div class="figure-overlay d-flex justify-content-center align-items-center position-absolute w-100 h-100">
-                                            <a href="#" class="btn gradient-bg mr-2">Donate Now</a>
-                                        </div><!-- .figure-overlay -->
-                                    </figure>
-
-                                    <div class="cause-content-wrap">
-                                        <header class="entry-header d-flex flex-wrap align-items-center">
-                                            <h3 class="entry-title w-100 m-0"><a href="#">Education for all</a></h3>
-                                        </header><!-- .entry-header -->
-
-                                        <div class="entry-content">
-                                            <p class="m-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris tempus vestib ulum mauris.</p>
-                                        </div><!-- .entry-content -->
-
-                                        <div class="fund-raised w-100">
-                                            <div class="fund-raised-bar-5 barfiller">
-                                                <div class="tipWrap">
-                                                    <span class="tip"></span>
-                                                </div><!-- .tipWrap -->
-
-                                                <span class="fill" data-percentage="70"></span>
-                                            </div><!-- .fund-raised-bar -->
-
-                                            <div class="fund-raised-details d-flex flex-wrap justify-content-between align-items-center">
-                                                <div class="fund-raised-total mt-4">
-                                                    Raised: $56 880
-                                                </div><!-- .fund-raised-total -->
-
-                                                <div class="fund-raised-goal mt-4">
-                                                    Goal: $70 000
-                                                </div><!-- .fund-raised-goal -->
-                                            </div><!-- .fund-raised-details -->
-                                        </div><!-- .fund-raised -->
-                                    </div><!-- .cause-content-wrap -->
-                                </div><!-- .cause-wrap -->
-                            </div><!-- .swiper-slide -->
-
-                            <div class="swiper-slide">
-                                <div class="cause-wrap">
-                                    <figure class="m-0">
-                                        <img src="images/cause-3.jpg" alt="">
-
-                                        <div class="figure-overlay d-flex justify-content-center align-items-center position-absolute w-100 h-100">
-                                            <a href="#" class="btn gradient-bg mr-2">Donate Now</a>
-                                        </div><!-- .figure-overlay -->
-                                    </figure>
-
-                                    <div class="cause-content-wrap">
-                                        <header class="entry-header d-flex flex-wrap align-items-center">
-                                            <h3 class="entry-title w-100 m-0"><a href="#">Bring water to the childrens</a></h3>
-                                        </header><!-- .entry-header -->
-
-                                        <div class="entry-content">
-                                            <p class="m-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris tempus vestib ulum mauris.</p>
-                                        </div><!-- .entry-content -->
-
-                                        <div class="fund-raised w-100">
-                                            <div class="fund-raised-bar-6 barfiller">
-                                                <div class="tipWrap">
-                                                    <span class="tip"></span>
-                                                </div><!-- .tipWrap -->
-
-                                                <span class="fill" data-percentage="83"></span>
-                                            </div><!-- .fund-raised-bar -->
-
-                                            <div class="fund-raised-details d-flex flex-wrap justify-content-between align-items-center">
-                                                <div class="fund-raised-total mt-4">
-                                                    Raised: $56 880
-                                                </div><!-- .fund-raised-total -->
-
-                                                <div class="fund-raised-goal mt-4">
-                                                    Goal: $70 000
-                                                </div><!-- .fund-raised-goal -->
-                                            </div><!-- .fund-raised-details -->
-                                        </div><!-- .fund-raised -->
-                                    </div><!-- .cause-content-wrap -->
-                                </div><!-- .cause-wrap -->
-                            </div><!-- .swiper-slide -->
-                        </div><!-- .swiper-wrapper -->
-
-                    </div><!-- .swiper-container -->
-
-                    <!-- Add Arrows -->
-                    <div class="swiper-button-next flex justify-content-center align-items-center">
-                        <span><svg viewBox="0 0 1792 1792" xmlns="http://www.w3.org/2000/svg"><path d="M1171 960q0 13-10 23l-466 466q-10 10-23 10t-23-10l-50-50q-10-10-10-23t10-23l393-393-393-393q-10-10-10-23t10-23l50-50q10-10 23-10t23 10l466 466q10 10 10 23z"/></svg></span>
-                    </div>
-
-                    <div class="swiper-button-prev flex justify-content-center align-items-center">
-                        <span><svg viewBox="0 0 1792 1792" xmlns="http://www.w3.org/2000/svg"><path d="M1203 544q0 13-10 23l-393 393 393 393q10 10 10 23t-10 23l-50 50q-10 10-23 10t-23-10l-466-466q-10-10-10-23t10-23l466-466q10-10 23-10t23 10l50 50q10 10 10 23z"/></svg></span>
-                    </div>
-                </div><!-- .col -->
-            </div><!-- .row -->
-        </div><!-- .container -->
-    </div><!-- .our-causes -->
-
-    <div class="home-page-limestone">
+            </div>
+        </div>
+    </div>
+    <!-- ##### Hero Area End ##### -->
+
+    <!-- ##### Blog Wrapper Start ##### -->
+    <div class="blog-wrapper section-padding-100 clearfix">
         <div class="container">
             <div class="row align-items-end">
-                <div class="coL-12 col-lg-6">
-                    <div class="section-heading">
-                        <h2 class="entry-title">We love to help all the children that have problems in the world. After 15 years we have many goals achieved.</h2>
+                <!-- Single Blog Area -->
+                <div class="col-12 col-lg-4">
+                    <div class="single-blog-area clearfix mb-100">
+                        <!-- Blog Content -->
+                        <div class="single-blog-content">
+                            <div class="line"></div>
+                            <a href="#" class="post-tag">Lifestyle</a>
+                            <h4><a href="#" class="post-headline">Welcome to this Lifestyle blog</a></h4>
+                            <p>Curabitur venenatis efficitur lorem sed tempor. Integer aliquet tempor cursus. Nullam vestibulum convallis risus vel condimentum. Nullam auctor lorem in libero luctus, vel volutpat quam tincidunt. Morbi sodales, dolor id ultricies dictum</p>
+                            <a href="#" class="btn original-btn">Read More</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Single Blog Area -->
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="single-catagory-area clearfix mb-100">
+                        <img src="img/blog-img/1.jpg" alt="">
+                        <!-- Catagory Title -->
+                        <div class="catagory-title">
+                            <a href="#">Lifestyle posts</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Single Blog Area -->
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="single-catagory-area clearfix mb-100">
+                        <img src="img/blog-img/2.jpg" alt="">
+                        <!-- Catagory Title -->
+                        <div class="catagory-title">
+                            <a href="#">latest posts</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
 
-                        <p class="mt-5">Dolor sit amet, consectetur adipiscing elit. Mauris tempus vestib ulum mauris quis aliquam. Lorem ipsum dolor sit amet.</p>
-                    </div><!-- .section-heading -->
-                </div><!-- .col -->
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-lg-9">
 
-                <div class="col-12 col-lg-6">
-                    <div class="milestones d-flex flex-wrap justify-content-between">
-                        <div class="col-12 col-sm-4 mt-5 mt-lg-0">
-                            <div class="counter-box">
-                                <div class="d-flex justify-content-center align-items-center">
-                                    <img src="images/teamwork.png" alt="">
+                    <!-- Single Blog Area  -->
+                    <div class="single-blog-area blog-style-2 mb-50 wow fadeInUp" data-wow-delay="0.2s" data-wow-duration="1000ms">
+                        <div class="row align-items-center">
+                            <div class="col-12 col-md-6">
+                                <div class="single-blog-thumbnail">
+                                    <img src="img/blog-img/3.jpg" alt="">
+                                    <div class="post-date">
+                                        <a href="#">12 <span>march</span></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-6">
+                                <!-- Blog Content -->
+                                <div class="single-blog-content">
+                                    <div class="line"></div>
+                                    <a href="#" class="post-tag">Lifestyle</a>
+                                    <h4><a href="#" class="post-headline">Party people in the house</a></h4>
+                                    <p>Curabitur venenatis efficitur lorem sed tempor. Integer aliquet tempor cursus. Nullam vestibulum convallis risus vel condimentum. Nullam auctor lorem in libero luctus, vel volutpat quam tincidunt.</p>
+                                    <div class="post-meta">
+                                        <p>By <a href="#">james smith</a></p>
+                                        <p>3 comments</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Single Blog Area  -->
+                    <div class="single-blog-area blog-style-2 mb-50 wow fadeInUp" data-wow-delay="0.3s" data-wow-duration="1000ms">
+                        <div class="row align-items-center">
+                            <div class="col-12 col-md-6">
+                                <div class="single-blog-thumbnail">
+                                    <img src="img/blog-img/4.jpg" alt="">
+                                    <div class="post-date">
+                                        <a href="#">12 <span>march</span></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-6">
+                                <!-- Blog Content -->
+                                <div class="single-blog-content">
+                                    <div class="line"></div>
+                                    <a href="#" class="post-tag">Lifestyle</a>
+                                    <h4><a href="#" class="post-headline">We love colors in 2018</a></h4>
+                                    <p>Curabitur venenatis efficitur lorem sed tempor. Integer aliquet tempor cursus. Nullam vestibulum convallis risus vel condimentum. Nullam auctor lorem in libero luctus, vel volutpat quam tincidunt.</p>
+                                    <div class="post-meta">
+                                        <p>By <a href="#">james smith</a></p>
+                                        <p>3 comments</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Single Blog Area  -->
+                    <div class="single-blog-area blog-style-2 mb-50 wow fadeInUp" data-wow-delay="0.4s" data-wow-duration="1000ms">
+                        <div class="row">
+                            <div class="col-12">
+                                <div class="single-blog-thumbnail">
+                                    <img src="img/blog-img/7.jpg" alt="">
+                                    <div class="post-date">
+                                        <a href="#">10 <span>march</span></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <!-- Blog Content -->
+                                <div class="single-blog-content mt-50">
+                                    <div class="line"></div>
+                                    <a href="#" class="post-tag">Lifestyle</a>
+                                    <h4><a href="#" class="post-headline">10 Tips to organize the perfect party</a></h4>
+                                    <p>Curabitur venenatis efficitur lorem sed tempor. Integer aliquet tempor cursus. Nullam vestibulum convallis risus vel condimentum. Nullam auctor lorem in libero luctus, vel volutpat quam tincidunt.</p>
+                                    <div class="post-meta">
+                                        <p>By <a href="#">james smith</a></p>
+                                        <p>3 comments</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Single Blog Area  -->
+                    <div class="single-blog-area blog-style-2 mb-50 wow fadeInUp" data-wow-delay="0.5s" data-wow-duration="1000ms">
+                        <div class="row align-items-center">
+                            <div class="col-12 col-md-6">
+                                <div class="single-blog-thumbnail">
+                                    <img src="img/blog-img/5.jpg" alt="">
+                                    <div class="post-date">
+                                        <a href="#">12 <span>march</span></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-6">
+                                <!-- Blog Content -->
+                                <div class="single-blog-content">
+                                    <div class="line"></div>
+                                    <a href="#" class="post-tag">Lifestyle</a>
+                                    <h4><a href="#" class="post-headline">Party people in the house</a></h4>
+                                    <p>Curabitur venenatis efficitur lorem sed tempor. Integer aliquet tempor cursus. Nullam vestibulum convallis risus vel condimentum. Nullam auctor lorem in libero luctus, vel volutpat quam tincidunt.</p>
+                                    <div class="post-meta">
+                                        <p>By <a href="#">james smith</a></p>
+                                        <p>3 comments</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Single Blog Area  -->
+                    <div class="single-blog-area blog-style-2 mb-50 wow fadeInUp" data-wow-delay="0.6s" data-wow-duration="1000ms">
+                        <div class="row align-items-center">
+                            <div class="col-12 col-md-6">
+                                <div class="single-blog-thumbnail">
+                                    <img src="img/blog-img/6.jpg" alt="">
+                                    <div class="post-date">
+                                        <a href="#">12 <span>march</span></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-6">
+                                <!-- Blog Content -->
+                                <div class="single-blog-content">
+                                    <div class="line"></div>
+                                    <a href="#" class="post-tag">Lifestyle</a>
+                                    <h4><a href="#" class="post-headline">We love colors in 2018</a></h4>
+                                    <p>Curabitur venenatis efficitur lorem sed tempor. Integer aliquet tempor cursus. Nullam vestibulum convallis risus vel condimentum. Nullam auctor lorem in libero luctus, vel volutpat quam tincidunt.</p>
+                                    <div class="post-meta">
+                                        <p>By <a href="#">james smith</a></p>
+                                        <p>3 comments</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Load More -->
+                    <div class="load-more-btn mt-100 wow fadeInUp" data-wow-delay="0.7s" data-wow-duration="1000ms">
+                        <a href="#" class="btn original-btn">Read More</a>
+                    </div>
+                </div>
+
+                <!-- ##### Sidebar Area ##### -->
+                <div class="col-12 col-md-4 col-lg-3">
+                    <div class="post-sidebar-area">
+
+                        <!-- Widget Area -->
+                        <div class="sidebar-widget-area">
+                            <form action="#" class="search-form">
+                                <input type="search" name="search" id="searchForm" placeholder="Search">
+                                <input type="submit" value="submit">
+                            </form>
+                        </div>
+
+                        <!-- Widget Area -->
+                        <div class="sidebar-widget-area">
+                            <h5 class="title subscribe-title">Subscribe to my newsletter</h5>
+                            <div class="widget-content">
+                                <form action="#" class="newsletterForm">
+                                    <input type="email" name="email" id="subscribesForm" placeholder="Your e-mail here">
+                                    <button type="submit" class="btn original-btn">Subscribe</button>
+                                </form>
+                            </div>
+                        </div>
+
+                        <!-- Widget Area -->
+                        <div class="sidebar-widget-area">
+                            <h5 class="title">Advertisement</h5>
+                            <a href="#"><img src="img/bg-img/add.gif" alt=""></a>
+                        </div>
+
+                        <!-- Widget Area -->
+                        <div class="sidebar-widget-area">
+                            <h5 class="title">Latest Posts</h5>
+
+                            <div class="widget-content">
+
+                                <!-- Single Blog Post -->
+                                <div class="single-blog-post d-flex align-items-center widget-post">
+                                    <!-- Post Thumbnail -->
+                                    <div class="post-thumbnail">
+                                        <img src="img/blog-img/lp1.jpg" alt="">
+                                    </div>
+                                    <!-- Post Content -->
+                                    <div class="post-content">
+                                        <a href="#" class="post-tag">Lifestyle</a>
+                                        <h4><a href="#" class="post-headline">Party people in the house</a></h4>
+                                        <div class="post-meta">
+                                            <p><a href="#">12 March</a></p>
+                                        </div>
+                                    </div>
                                 </div>
 
-                                <div class="d-flex justify-content-center align-items-baseline">
-                                    <div class="start-counter" data-to="120" data-speed="2000"></div>
-                                    <div class="counter-k">K</div>
+                                <!-- Single Blog Post -->
+                                <div class="single-blog-post d-flex align-items-center widget-post">
+                                    <!-- Post Thumbnail -->
+                                    <div class="post-thumbnail">
+                                        <img src="img/blog-img/lp2.jpg" alt="">
+                                    </div>
+                                    <!-- Post Content -->
+                                    <div class="post-content">
+                                        <a href="#" class="post-tag">Lifestyle</a>
+                                        <h4><a href="#" class="post-headline">A sunday in the park</a></h4>
+                                        <div class="post-meta">
+                                            <p><a href="#">12 March</a></p>
+                                        </div>
+                                    </div>
                                 </div>
 
-                                <h3 class="entry-title">Children helped</h3><!-- entry-title -->
-                            </div><!-- counter-box -->
-                        </div><!-- .col -->
-
-                        <div class="col-12 col-sm-4 mt-5 mt-lg-0">
-                            <div class="counter-box">
-                                <div class="d-flex justify-content-center align-items-center">
-                                    <img src="images/donation.png" alt="">
+                                <!-- Single Blog Post -->
+                                <div class="single-blog-post d-flex align-items-center widget-post">
+                                    <!-- Post Thumbnail -->
+                                    <div class="post-thumbnail">
+                                        <img src="img/blog-img/lp3.jpg" alt="">
+                                    </div>
+                                    <!-- Post Content -->
+                                    <div class="post-content">
+                                        <a href="#" class="post-tag">Lifestyle</a>
+                                        <h4><a href="#" class="post-headline">Party people in the house</a></h4>
+                                        <div class="post-meta">
+                                            <p><a href="#">12 March</a></p>
+                                        </div>
+                                    </div>
                                 </div>
 
-                                <div class="d-flex justify-content-center align-items-baseline">
-                                    <div class="start-counter" data-to="79" data-speed="2000"></div>
+                                <!-- Single Blog Post -->
+                                <div class="single-blog-post d-flex align-items-center widget-post">
+                                    <!-- Post Thumbnail -->
+                                    <div class="post-thumbnail">
+                                        <img src="img/blog-img/lp4.jpg" alt="">
+                                    </div>
+                                    <!-- Post Content -->
+                                    <div class="post-content">
+                                        <a href="#" class="post-tag">Lifestyle</a>
+                                        <h4><a href="#" class="post-headline">A sunday in the park</a></h4>
+                                        <div class="post-meta">
+                                            <p><a href="#">12 March</a></p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Widget Area -->
+                        <div class="sidebar-widget-area">
+                            <h5 class="title">Tags</h5>
+                            <div class="widget-content">
+                                <ul class="tags">
+                                    <li><a href="#">design</a></li>
+                                    <li><a href="#">fashion</a></li>
+                                    <li><a href="#">travel</a></li>
+                                    <li><a href="#">music</a></li>
+                                    <li><a href="#">party</a></li>
+                                    <li><a href="#">video</a></li>
+                                    <li><a href="#">photography</a></li>
+                                    <li><a href="#">adventure</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ##### Blog Wrapper End ##### -->
+
+    <!-- ##### Instagram Feed Area Start ##### -->
+    <div class="instagram-feed-area">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="insta-title">
+                        <h5>Follow us @ Instagram</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Instagram Slides -->
+        <div class="instagram-slides owl-carousel">
+            <!-- Single Insta Feed -->
+            <div class="single-insta-feed">
+                <img src="img/instagram-img/1.png" alt="">
+                <!-- Hover Effects -->
+                <div class="hover-effects">
+                    <a href="#" class="d-flex align-items-center justify-content-center"><i class="fa fa-instagram"></i></a>
+                </div>
+            </div>
+            <!-- Single Insta Feed -->
+            <div class="single-insta-feed">
+                <img src="img/instagram-img/2.png" alt="">
+                <!-- Hover Effects -->
+                <div class="hover-effects">
+                    <a href="#" class="d-flex align-items-center justify-content-center"><i class="fa fa-instagram"></i></a>
+                </div>
+            </div>
+            <!-- Single Insta Feed -->
+            <div class="single-insta-feed">
+                <img src="img/instagram-img/3.png" alt="">
+                <!-- Hover Effects -->
+                <div class="hover-effects">
+                    <a href="#" class="d-flex align-items-center justify-content-center"><i class="fa fa-instagram"></i></a>
+                </div>
+            </div>
+            <!-- Single Insta Feed -->
+            <div class="single-insta-feed">
+                <img src="img/instagram-img/4.png" alt="">
+                <!-- Hover Effects -->
+                <div class="hover-effects">
+                    <a href="#" class="d-flex align-items-center justify-content-center"><i class="fa fa-instagram"></i></a>
+                </div>
+            </div>
+            <!-- Single Insta Feed -->
+            <div class="single-insta-feed">
+                <img src="img/instagram-img/5.png" alt="">
+                <!-- Hover Effects -->
+                <div class="hover-effects">
+                    <a href="#" class="d-flex align-items-center justify-content-center"><i class="fa fa-instagram"></i></a>
+                </div>
+            </div>
+            <!-- Single Insta Feed -->
+            <div class="single-insta-feed">
+                <img src="img/instagram-img/6.png" alt="">
+                <!-- Hover Effects -->
+                <div class="hover-effects">
+                    <a href="#" class="d-flex align-items-center justify-content-center"><i class="fa fa-instagram"></i></a>
+                </div>
+            </div>
+            <!-- Single Insta Feed -->
+            <div class="single-insta-feed">
+                <img src="img/instagram-img/7.png" alt="">
+                <!-- Hover Effects -->
+                <div class="hover-effects">
+                    <a href="#" class="d-flex align-items-center justify-content-center"><i class="fa fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ##### Instagram Feed Area End ##### -->
+
+    <!-- ##### Footer Area Start ##### -->
+    <footer class="footer-area text-center">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                   
+                    <!-- Footer Nav Area -->
+                    <div class="classy-nav-container breakpoint-off">
+                        <!-- Classy Menu -->
+                        <nav class="classy-navbar justify-content-center">
+
+                            <!-- Navbar Toggler -->
+                            <div class="classy-navbar-toggler">
+                                <span class="navbarToggler"><span></span><span></span><span></span></span>
+                            </div>
+
+                            <!-- Menu -->
+                            <div class="classy-menu">
+
+                                <!-- close btn -->
+                                <div class="classycloseIcon">
+                                    <div class="cross-wrap"><span class="top"></span><span class="bottom"></span></div>
                                 </div>
 
-                                <h3 class="entry-title">Water wells</h3><!-- entry-title -->
-                            </div><!-- counter-box -->
-                        </div><!-- .col -->
-
-                        <div class="col-12 col-sm-4 mt-5 mt-lg-0">
-                            <div class="counter-box">
-                                <div class="d-flex justify-content-center align-items-center">
-                                    <img src="images/dove.png" alt="">
+                                <!-- Nav Start -->
+                                <div class="classynav">
+                                    <ul>
+                                        <li><a href="#">Home</a></li>
+                                        <li><a href="#">About Us</a></li>
+                                        <li><a href="#">Lifestyle</a></li>
+                                        <li><a href="#">travel</a></li>
+                                        <li><a href="#">Music</a></li>
+                                        <li><a href="#">Contact</a></li>
+                                    </ul>
                                 </div>
+                                <!-- Nav End -->
+                            </div>
+                        </nav>
+                    </div>
+                    
+                    <!-- Footer Social Area -->
+                    <div class="footer-social-area mt-30">
+                        <a href="#" data-toggle="tooltip" data-placement="top" title="Pinterest"><i class="fa fa-pinterest" aria-hidden="true"></i></a>
+                        <a href="#" data-toggle="tooltip" data-placement="top" title="Facebook"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                        <a href="#" data-toggle="tooltip" data-placement="top" title="Twitter"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                        <a href="#" data-toggle="tooltip" data-placement="top" title="Dribbble"><i class="fa fa-dribbble" aria-hidden="true"></i></a>
+                        <a href="#" data-toggle="tooltip" data-placement="top" title="Behance"><i class="fa fa-behance" aria-hidden="true"></i></a>
+                        <a href="#" data-toggle="tooltip" data-placement="top" title="Linkedin"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
 
-                                <div class="d-flex justify-content-center align-items-baseline">
-                                    <div class="start-counter" data-to="253" data-speed="2000"></div>
-                                </div>
-
-                                <h3 class="entry-title">Volunteeres</h3><!-- entry-title -->
-                            </div><!-- counter-box -->
-                        </div><!-- .col -->
-                    </div><!-- .milestones -->
-                </div><!-- .col -->
-            </div><!-- .row -->
-        </div><!-- .container -->
-    </div><!-- .our-causes -->
-
-    <footer class="site-footer">
-        <div class="footer-widgets">
-            <div class="container">
-                <div class="row">
-                    <div class="col-12 col-md-6 col-lg-3">
-                        <div class="foot-about">
-                            <h2><a class="foot-logo" href="#"><img src="images/foot-logo.png" alt=""></a></h2>
-
-                            <p>Lorem ipsum dolor sit amet, con sectetur adipiscing elit. Mauris temp us vestib ulum mauris.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris tempus vestib ulum mauris.Lorem ipsum dolo.</p>
-
-                            <ul class="d-flex flex-wrap align-items-center">
-                                <li><a href="#"><i class="fa fa-pinterest-p"></i></a></li>
-                                <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-                                <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-                                <li><a href="#"><i class="fa fa-dribbble"></i></a></li>
-                                <li><a href="#"><i class="fa fa-behance"></i></a></li>
-                                <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
-                            </ul>
-                        </div><!-- .foot-about -->
-                    </div><!-- .col -->
-
-                    <div class="col-12 col-md-6 col-lg-3 mt-5 mt-md-0">
-                        <h2>Useful Links</h2>
-
-                        <ul>
-                            <li><a href="#">Privacy Polticy</a></li>
-                            <li><a href="#">Become  a Volunteer</a></li>
-                            <li><a href="#">Donate</a></li>
-                            <li><a href="#">Testimonials</a></li>
-                            <li><a href="#">Causes</a></li>
-                            <li><a href="#">Portfolio</a></li>
-                            <li><a href="#">News</a></li>
-                        </ul>
-                    </div><!-- .col -->
-
-                    <div class="col-12 col-md-6 col-lg-3 mt-5 mt-md-0">
-                        <div class="foot-latest-news">
-                            <h2>Latest News</h2>
-
-                            <ul>
-                                <li>
-                                    <h3><a href="#">A new cause to help</a></h3>
-                                    <div class="posted-date">MArch 12, 2018</div>
-                                </li>
-
-                                <li>
-                                    <h3><a href="#">We love to help people</a></h3>
-                                    <div class="posted-date">MArch 12, 2018</div>
-                                </li>
-
-                                <li>
-                                    <h3><a href="#">The new ideas for helping</a></h3>
-                                    <div class="posted-date">MArch 12, 2018</div>
-                                </li>
-                            </ul>
-                        </div><!-- .foot-latest-news -->
-                    </div><!-- .col -->
-
-                    <div class="col-12 col-md-6 col-lg-3 mt-5 mt-md-0">
-                        <div class="foot-contact">
-                            <h2>Contact</h2>
-
-                            <ul>
-                                <li><i class="fa fa-phone"></i><span>+45 677 8993000 223</span></li>
-                                <li><i class="fa fa-envelope"></i><span>office@template.com</span></li>
-                                <li><i class="fa fa-map-marker"></i><span>Main Str. no 45-46, b3, 56832, Los Angeles, CA</span></li>
-                            </ul>
-                        </div><!-- .foot-contact -->
-
-                        <div class="subscribe-form">
-                            <form class="d-flex flex-wrap align-items-center">
-                                <input type="email" placeholder="Your email">
-                                <input type="submit" value="send">
-                            </form><!-- .flex -->
-                        </div><!-- .search-widget -->
-                    </div><!-- .col -->
-                </div><!-- .row -->
-            </div><!-- .container -->
-        </div><!-- .footer-widgets -->
-
-        <div class="footer-bar">
-            <div class="container">
-                <div class="row">
-                    <div class="col-12">
-                        <p class="m-0"><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+   <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
 Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="fa fa-heart-o" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
-<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
-                    </div><!-- .col-12 -->
-                </div><!-- .row -->
-            </div><!-- .container -->
-        </div><!-- .footer-bar -->
-    </footer><!-- .site-footer -->
+<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
 
-    <script type='text/javascript' src='js/jquery.js'></script>
-    <script type='text/javascript' src='js/jquery.collapsible.min.js'></script>
-    <script type='text/javascript' src='js/swiper.min.js'></script>
-    <script type='text/javascript' src='js/jquery.countdown.min.js'></script>
-    <script type='text/javascript' src='js/circle-progress.min.js'></script>
-    <script type='text/javascript' src='js/jquery.countTo.min.js'></script>
-    <script type='text/javascript' src='js/jquery.barfiller.js'></script>
-    <script type='text/javascript' src='js/custom.js'></script>
+    </footer>
+    <!-- ##### Footer Area End ##### -->
+
+    <!-- jQuery (Necessary for All JavaScript Plugins) -->
+    <script src="js/jquery/jquery-2.2.4.min.js"></script>
+    <!-- Popper js -->
+    <script src="js/popper.min.js"></script>
+    <!-- Bootstrap js -->
+    <script src="js/bootstrap.min.js"></script>
+    <!-- Plugins js -->
+    <script src="js/plugins.js"></script>
+    <!-- Active js -->
+    <script src="js/active.js"></script>
 
 </body>
+
 </html>
